@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Distrired Distribuciones Antioquia</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <!-- wow js -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <script src="../js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+
 </head>
 <body>
     <header class="encabezado">
@@ -13,7 +22,7 @@
         <nav>
             <!-- a href sirve para que cuando le den clic a la imagen vaya al link que ponemos -->
             <a href="../index.html">
-                <img src="../img/distri.jpg" alt="Logo de Distrired">
+                <img src="../img/distri.png" alt="Logo de Distrired">
             </a>
             <ol>
                 <ul><a href="../pages/nosotros.html">Nosotros</a></ul>
@@ -25,43 +34,46 @@
         </nav>
         
     </header>
-    <h1 class="titulo">Distrired - Distribuidora área metropolitana de Antioquia</h1>
-    <section>
-        <div>
-            <h4>Contacto</h4>
-            <form action="contacto.php" method="post">
-                <fieldset class="form">
-                    <legend>Datos personales</legend>
-                    <label for="nombre">Nombre y Apellido</label>
-                    <input type="text" placeholder="Nombre y apellido" name="nombre" id="nombre">
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="algo@algo.com" name="email" id="email">
-                </fieldset>
-                <fieldset class="form">
-                    <legend>Información</legend>
-                    <label for="hoja-de-vida">Hoja de Vida</label>
-                    <input type="radio" value="velas" name="velas" id="velas">
-                    <label for="difusores">PQR</label>
-                    <input type="radio" value="difusores" name="difusores" id="difusores">
-                    <label for="difusores">Comprar</label>
-                    <input type="radio" value="Sales" name="Sales" id="Sales">
-                
-                
-                <label for="mensaje">Deja tu mensaje</label>
-                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="deja tu mensaje"></textarea>
-                </fieldset>
-                <br>
-                <fieldset class="form">
-                <label for="adjunto">Adjunto</label>
-                <textarea name="adjunto" id="adjunto" cols="30" rows="10" placeholder="Deja tu archivo en esta sección"></textarea>
-                </fieldset>
-                <br>
-                <input type="submit" value="Enviar" >
-                <input type="reset" value="Cancelar">
-                
-            </form>
+    <div class="griid" class="wow bounceInRight" data-wow-duration="2s" data-wow-delay="5s">
+        <div id="distri">
+        <h1  class="titulo">Distrired - Distribuidora área metropolitana de Antioquia</h1>
         </div>
-        <footer class="footer">
+            <div id="secciones">
+                <h4>Contacto</h4>
+                <form action="contacto.php" method="post">
+                    <fieldset class="form">
+                        <legend>Déjanos tu información</legend>
+                        <div>
+                            <label for="hoja-de-vida">Hoja de Vida</label>
+                            <input type="radio" value="velas" name="velas" id="velas">
+                            <label for="difusores">PQR</label>
+                            <input type="radio" value="difusores" name="difusores" id="difusores">
+                            <label for="difusores">Comprar</label>
+                            <input type="radio" value="Sales" name="Sales" id="Sales">
+                        </div>
+                        <div>
+                            <label for="nombre">Nombre y Apellido</label>
+                            <input class="input45" type="text" placeholder="Nombre y apellido" name="nombre" id="nombre">
+                            <label for="email">Email</label>
+                            <input class="input45" type="email" placeholder="correo@ejemplo.com" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="mensaje">Deja tu mensaje</label>
+                            <textarea class="input45" name="comentario" id="comentario" cols="30" rows="10" placeholder="deja tu mensaje"></textarea>        
+                        </div>
+                        <div>
+                            <label for="adjunto">Adjunto</label>
+                            <textarea class="input45" name="adjunto" id="adjunto" cols="30" rows="10" placeholder="Deja tu archivo en esta sección"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="butt">
+                        <input class="butt" type="submit" value="Enviar" >
+                        <input class="butt" type="reset" value="Cancelar">
+                    </div>
+                </form>
+            </div>
+    </div>        
+        <footer id="piepag" class="footer">
             <h2>Siguenos en nuestras redes</h2>
             <a href="https://www.facebook.com/DistriRedComercio" target="_blank">
                 <img src="../img/facebook-logo-1.png" alt="Siguenos en Facebook" width="50" height="30">
